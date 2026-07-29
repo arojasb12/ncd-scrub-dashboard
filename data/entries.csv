@@ -490,3 +490,4 @@ id,section,category,date,value,amount,source
 489,billing,Blank NBD,2026-07-23,2.0,,sync
 490,billing,Billing Alignment,2026-07-14,25.0,,sync
 491,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-16,246.0,,sync
+492,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-23,187.0,,sync
