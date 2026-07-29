@@ -474,31 +474,29 @@ id,section,category,date,value,amount,source
 474,listbill,LB NBD in the Past,2025-09-25,0.0,,seed
 475,listbill,LB FBD in the Past,2025-10-07,0.0,,seed
 476,listbill,LB NBD in the Past,2025-10-07,18.0,,seed
-477,integrity,Missing MOP,2026-07-28,8.0,,sync
-478,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-30,190.0,,sync
-479,billing,FPN Update (ACH Rebill 2+ Attempts),2026-07-07,43.0,,sync
-480,eligibility,MetLife (EDI),2026-07-13,9.0,,sync
-481,eligibility,MetLife (Carrier),2026-07-13,3.0,,sync
-482,eligibility,VSP (EDI),2026-07-13,3.0,,sync
-483,eligibility,VSP Carrier,2026-07-13,18.0,,sync
-484,eligibility,NWFA (EDI),2026-07-13,15.0,,sync
-485,eligibility,OED Errors (EDI),2026-07-13,2.0,,sync
-486,eligibility,Daily Dupes,2026-07-13,25.0,,sync
-487,admin,Mass Terms (Count),2026-07-01,5359.0,168759.99,sync
-488,admin,Mass Terms (Count),2026-07-09,1263.0,40662.42,sync
-489,integrity,PTD vs Inactive Date,2026-07-06,171.0,,sync
-490,integrity,PTD vs Inactive Date,2026-07-13,257.0,,sync
-491,integrity,PTD vs Inactive Date,2026-07-20,198.0,,sync
-492,integrity,PTD vs Inactive Date,2026-07-27,199.0,,sync
-493,admin,SRs Aged 30 Days,2026-07-01,36.0,,sync
-494,admin,SRs Aged 30 Days,2026-07-08,26.0,,sync
-495,admin,SRs Aged 30 Days,2026-07-15,32.0,,sync
-496,admin,SRs Aged 30 Days,2026-07-22,74.0,,sync
-497,admin,Age Outs – Final Notice,2026-07-01,32.0,,sync
-498,billing,Account Updater,2026-07-21,3.0,221.0,sync
-499,eligibility,MetLife (EDI),2026-07-20,12.0,,sync
-500,eligibility,MetLife (Carrier),2026-07-20,1.0,,sync
-501,eligibility,VSP (EDI),2026-07-20,4.0,,sync
-502,eligibility,VSP Carrier,2026-07-20,59.0,,sync
-503,eligibility,NWFA (EDI),2026-07-20,12.0,,sync
-504,eligibility,Daily Dupes,2026-07-20,23.0,29.0,sync
+477,integrity,$0 Product Fee,2026-07-23,2.0,,sync
+478,integrity,$0 Product Fee,2026-07-24,1.0,,sync
+479,integrity,$0 Product Fee,2026-07-27,2.0,,sync
+480,integrity,$0 Product Fee,2026-07-29,1.0,,sync
+481,integrity,Blank OED,2026-07-20,1.0,,sync
+482,integrity,Blank OED,2026-07-22,10.0,,sync
+483,integrity,Blank OED,2026-07-27,11.0,,sync
+484,integrity,Missing MOP,2026-07-14,4.0,,sync
+485,integrity,No Dependent Products,2026-07-28,1.0,,sync
+486,billing,Blank FBD,2026-07-15,11.0,,sync
+487,billing,FBD in the Past,2026-07-15,495.0,,sync
+488,billing,Blank FBD,2026-07-22,2.0,,sync
+489,billing,Blank NBD,2026-07-23,2.0,,sync
+490,billing,Billing Alignment,2026-07-14,25.0,,sync
+491,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-16,246.0,,sync
+492,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-23,187.0,,sync
+493,billing,FPN Update (ACH Rebill 2+ Attempts),2026-07-14,254.0,,sync
+494,billing,FBD in the Past,2026-07-22,10.0,,sync
+495,billing,Blank NBD,2026-07-16,2.0,,sync
+496,billing,NBD in the Past,2026-07-16,30.0,,sync
+497,eligibility,MetLife (EDI),2026-07-06,11.0,,sync
+498,eligibility,MetLife (Carrier),2026-07-06,2.0,,sync
+499,eligibility,VSP (EDI),2026-07-06,13.0,,sync
+500,eligibility,VSP Carrier,2026-07-06,60.0,,sync
+501,eligibility,NWFA (EDI),2026-07-06,12.0,,sync
+502,eligibility,Daily Dupes,2026-07-06,20.0,23.0,sync
