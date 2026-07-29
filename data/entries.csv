@@ -476,3 +476,5 @@ id,section,category,date,value,amount,source
 475,listbill,LB FBD in the Past,2025-10-07,0.0,,seed
 476,listbill,LB NBD in the Past,2025-10-07,18.0,,seed
 477,integrity,$0 Product Fee,2026-07-23,2.0,,sync
+478,integrity,$0 Product Fee,2026-07-24,1.0,,sync
+479,integrity,$0 Product Fee,2026-07-27,2.0,,sync
