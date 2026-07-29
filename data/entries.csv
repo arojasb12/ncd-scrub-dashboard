@@ -485,3 +485,4 @@ id,section,category,date,value,amount,source
 484,integrity,Missing MOP,2026-07-14,4.0,,sync
 485,integrity,No Dependent Products,2026-07-28,1.0,,sync
 486,billing,Blank FBD,2026-07-15,11.0,,sync
+487,billing,FBD in the Past,2026-07-15,495.0,,sync
