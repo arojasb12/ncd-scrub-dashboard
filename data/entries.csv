@@ -496,3 +496,9 @@ id,section,category,date,value,amount,source
 496,admin,SRs Aged 30 Days,2026-07-22,74.0,,sync
 497,admin,Age Outs – Final Notice,2026-07-01,32.0,,sync
 498,billing,Account Updater,2026-07-21,3.0,221.0,sync
+499,eligibility,MetLife (EDI),2026-07-20,12.0,,sync
+500,eligibility,MetLife (Carrier),2026-07-20,1.0,,sync
+501,eligibility,VSP (EDI),2026-07-20,4.0,,sync
+502,eligibility,VSP Carrier,2026-07-20,59.0,,sync
+503,eligibility,NWFA (EDI),2026-07-20,12.0,,sync
+504,eligibility,Daily Dupes,2026-07-20,23.0,29.0,sync
