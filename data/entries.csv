@@ -1,478 +1,478 @@
 id,section,category,date,value,amount,source
-1,eligibility,OED Errors (EDI),2026-01-02,5,,seed
-2,eligibility,MetLife (EDI),2026-01-05,50,,seed
-3,eligibility,VSP (EDI),2026-01-05,22,,seed
-4,eligibility,VSP Carrier,2026-01-05,13,,seed
-5,eligibility,Daily Dupes,2026-01-05,50,,seed
-6,eligibility,NWFA (EDI),2026-01-05,11,,seed
-7,eligibility,MetLife (EDI),2026-01-12,37,,seed
-8,eligibility,VSP (EDI),2026-01-12,53,,seed
-9,eligibility,VSP Carrier,2026-01-12,8,,seed
-10,eligibility,Daily Dupes,2026-01-12,66,,seed
-11,eligibility,NWFA (EDI),2026-01-12,30,,seed
-12,eligibility,OED Errors (EDI),2026-01-12,16,,seed
-13,eligibility,MetLife (Carrier),2026-01-12,8,,seed
-14,eligibility,MetLife (EDI),2026-01-19,24,,seed
-15,eligibility,VSP (EDI),2026-01-19,43,,seed
-16,eligibility,VSP Carrier,2026-01-19,8,,seed
-17,eligibility,Daily Dupes,2026-01-19,80,,seed
-18,eligibility,NWFA (EDI),2026-01-19,31,,seed
-19,eligibility,MetLife (Carrier),2026-01-19,9,,seed
-20,eligibility,MetLife (EDI),2026-01-26,87,,seed
-21,eligibility,VSP (EDI),2026-01-26,37,,seed
-22,eligibility,VSP Carrier,2026-01-26,8,,seed
-23,eligibility,Daily Dupes,2026-01-26,45,,seed
-24,eligibility,NWFA (EDI),2026-01-26,30,,seed
-25,eligibility,MetLife (Carrier),2026-01-26,9,,seed
-26,eligibility,Careington (Carrier),2026-01-21,1,,seed
-27,eligibility,MetLife (EDI),2026-02-02,93,,seed
-28,eligibility,VSP (EDI),2026-02-02,68,,seed
-29,eligibility,VSP Carrier,2026-02-02,13,,seed
-30,eligibility,Daily Dupes,2026-02-02,86,,seed
-31,eligibility,NWFA (EDI),2026-02-02,32,,seed
-32,eligibility,MetLife (Carrier),2026-02-02,9,,seed
-33,eligibility,OED Errors (EDI),2026-02-02,10,,seed
-34,eligibility,MetLife (EDI),2026-02-09,58,,seed
-35,eligibility,VSP (EDI),2026-02-09,52,,seed
-36,eligibility,VSP Carrier,2026-02-09,7,,seed
-37,eligibility,Daily Dupes,2026-02-09,56,,seed
-38,eligibility,NWFA (EDI),2026-02-09,20,,seed
-39,eligibility,MetLife (Carrier),2026-02-09,5,,seed
-40,eligibility,OED Errors (EDI),2026-02-09,16,,seed
-41,eligibility,MetLife (EDI),2026-02-15,74,,seed
-42,eligibility,VSP (EDI),2026-02-15,82,,seed
-43,eligibility,VSP Carrier,2026-02-15,11,,seed
-44,eligibility,Daily Dupes,2026-02-15,36,,seed
-45,eligibility,NWFA (EDI),2026-02-15,30,,seed
-46,eligibility,MetLife (Carrier),2026-02-15,17,,seed
-47,eligibility,OED Errors (EDI),2026-02-15,13,,seed
-48,eligibility,MetLife (EDI),2026-02-23,50,,seed
-49,eligibility,VSP (EDI),2026-02-23,55,,seed
-50,eligibility,VSP Carrier,2026-02-23,8,,seed
-51,eligibility,Daily Dupes,2026-02-23,41,,seed
-52,eligibility,NWFA (EDI),2026-02-23,17,,seed
-53,eligibility,MetLife (Carrier),2026-02-23,15,,seed
-54,eligibility,OED Errors (EDI),2026-02-23,16,,seed
-55,eligibility,MetLife (EDI),2026-03-01,68,,seed
-56,eligibility,VSP (EDI),2026-03-01,79,,seed
-57,eligibility,VSP Carrier,2026-03-01,13,,seed
-58,eligibility,Daily Dupes,2026-03-01,38,,seed
-59,eligibility,NWFA (EDI),2026-03-01,42,,seed
-60,eligibility,MetLife (Carrier),2026-03-01,8,,seed
-61,eligibility,OED Errors (EDI),2026-03-01,13,,seed
-62,eligibility,MetLife (EDI),2026-03-08,63,,seed
-63,eligibility,VSP (EDI),2026-03-08,72,,seed
-64,eligibility,VSP Carrier,2026-03-08,8,,seed
-65,eligibility,Daily Dupes,2026-03-08,37,,seed
-66,eligibility,NWFA (EDI),2026-03-08,23,,seed
-67,eligibility,MetLife (Carrier),2026-03-08,9,,seed
-68,eligibility,OED Errors (EDI),2026-03-08,8,,seed
-69,eligibility,MetLife (EDI),2026-03-15,49,,seed
-70,eligibility,VSP (EDI),2026-03-15,70,,seed
-71,eligibility,VSP Carrier,2026-03-15,16,,seed
-72,eligibility,Daily Dupes,2026-03-15,30,,seed
-73,eligibility,NWFA (EDI),2026-03-15,17,,seed
-74,eligibility,MetLife (Carrier),2026-03-15,7,,seed
-75,eligibility,OED Errors (EDI),2026-03-15,9,,seed
-76,eligibility,MetLife (EDI),2026-03-22,50,,seed
-77,eligibility,VSP (EDI),2026-03-22,97,,seed
-78,eligibility,VSP Carrier,2026-03-22,24,,seed
-79,eligibility,Daily Dupes,2026-03-22,50,,seed
-80,eligibility,NWFA (EDI),2026-03-22,18,,seed
-81,eligibility,MetLife (Carrier),2026-03-22,18,,seed
-82,eligibility,OED Errors (EDI),2026-03-22,15,,seed
-83,eligibility,MetLife (EDI),2026-03-29,30,,seed
-84,eligibility,VSP (EDI),2026-03-29,77,,seed
-85,eligibility,VSP Carrier,2026-03-29,37,,seed
-86,eligibility,Daily Dupes,2026-03-29,52,,seed
-87,eligibility,NWFA (EDI),2026-03-29,15,,seed
-88,eligibility,MetLife (Carrier),2026-03-29,11,,seed
-89,eligibility,OED Errors (EDI),2026-03-29,4,,seed
-90,eligibility,MetLife (EDI),2026-04-05,57,,seed
-91,eligibility,VSP (EDI),2026-04-05,53,,seed
-92,eligibility,VSP Carrier,2026-04-05,26,,seed
-93,eligibility,Daily Dupes,2026-04-05,44,,seed
-94,eligibility,NWFA (EDI),2026-04-05,21,,seed
-95,eligibility,MetLife (Carrier),2026-04-05,8,,seed
-96,eligibility,OED Errors (EDI),2026-04-05,8,,seed
-97,eligibility,Zurich (e123),2026-04-05,3,,seed
-98,eligibility,MetLife (EDI),2026-04-12,44,,seed
-99,eligibility,VSP (EDI),2026-04-12,77,,seed
-100,eligibility,VSP Carrier,2026-04-12,49,,seed
-101,eligibility,Daily Dupes,2026-04-12,63,,seed
-102,eligibility,NWFA (EDI),2026-04-12,23,,seed
-103,eligibility,MetLife (Carrier),2026-04-12,8,,seed
-104,eligibility,OED Errors (EDI),2026-04-12,11,,seed
-105,eligibility,Zurich (e123),2026-04-12,2,,seed
-106,eligibility,MetLife (EDI),2026-04-19,63,,seed
-107,eligibility,VSP (EDI),2026-04-19,52,,seed
-108,eligibility,VSP Carrier,2026-04-19,16,,seed
-109,eligibility,Daily Dupes,2026-04-19,46,,seed
-110,eligibility,NWFA (EDI),2026-04-19,26,,seed
-111,eligibility,MetLife (Carrier),2026-04-19,16,,seed
-112,eligibility,OED Errors (EDI),2026-04-19,18,,seed
-113,eligibility,MetLife (EDI),2026-04-26,30,,seed
-114,eligibility,VSP (EDI),2026-04-26,39,,seed
-115,eligibility,VSP Carrier,2026-04-26,7,,seed
-116,eligibility,Daily Dupes,2026-04-26,34,,seed
-117,eligibility,NWFA (EDI),2026-04-26,11,,seed
-118,eligibility,MetLife (Carrier),2026-04-26,5,,seed
-119,eligibility,Zurich (e123),2026-04-26,3,,seed
-120,eligibility,MetLife (EDI),2026-05-03,82,,seed
-121,eligibility,VSP (EDI),2026-05-03,82,,seed
-122,eligibility,VSP Carrier,2026-05-03,25,,seed
-123,eligibility,Daily Dupes,2026-05-03,56,,seed
-124,eligibility,NWFA (EDI),2026-05-03,41,,seed
-125,eligibility,MetLife (Carrier),2026-05-03,16,,seed
-126,eligibility,Zurich (e123),2026-05-02,3,,seed
-127,eligibility,MetLife (EDI),2026-05-10,62,,seed
-128,eligibility,VSP (EDI),2026-05-10,60,,seed
-129,eligibility,VSP Carrier,2026-05-10,23,,seed
-130,eligibility,Daily Dupes,2026-05-10,43,,seed
-131,eligibility,NWFA (EDI),2026-05-10,9,,seed
-132,eligibility,MetLife (Carrier),2026-05-10,8,,seed
-133,eligibility,Zurich (e123),2026-05-10,3,,seed
-134,eligibility,MetLife (EDI),2026-05-17,48,,seed
-135,eligibility,VSP (EDI),2026-05-17,62,,seed
-136,eligibility,VSP Carrier,2026-05-17,21,,seed
-137,eligibility,Daily Dupes,2026-05-17,62,,seed
-138,eligibility,NWFA (EDI),2026-05-17,23,,seed
-139,eligibility,MetLife (Carrier),2026-05-17,19,,seed
-140,eligibility,Zurich (e123),2026-05-17,2,,seed
-141,eligibility,MetLife (EDI),2026-05-24,33,,seed
-142,eligibility,VSP (EDI),2026-05-24,39,,seed
-143,eligibility,VSP Carrier,2026-05-24,10,,seed
-144,eligibility,Daily Dupes,2026-05-24,38,,seed
-145,eligibility,NWFA (EDI),2026-05-24,19,,seed
-146,eligibility,MetLife (Carrier),2026-05-24,11,,seed
-147,eligibility,MetLife (EDI),2026-05-31,38,,seed
-148,eligibility,VSP (EDI),2026-05-31,48,,seed
-149,eligibility,VSP Carrier,2026-05-31,19,,seed
-150,eligibility,Daily Dupes,2026-05-31,37,,seed
-151,eligibility,NWFA (EDI),2026-05-31,13,,seed
-152,eligibility,MetLife (Carrier),2026-05-31,17,,seed
-153,eligibility,OED Errors (EDI),2026-05-31,8,,seed
-154,eligibility,MetLife (EDI),2026-06-07,37,,seed
-155,eligibility,VSP (EDI),2026-06-07,50,,seed
-156,eligibility,VSP Carrier,2026-06-07,14,,seed
-157,eligibility,Daily Dupes,2026-06-07,67,,seed
-158,eligibility,NWFA (EDI),2026-06-07,22,,seed
-159,eligibility,MetLife (Carrier),2026-06-07,10,,seed
-160,eligibility,OED Errors (EDI),2026-06-07,9,,seed
-161,eligibility,VSP (EDI),2026-06-08,49,,seed
-162,eligibility,MetLife (EDI),2026-06-15,34,,seed
-163,eligibility,VSP (EDI),2026-06-15,73,,seed
-164,eligibility,VSP Carrier,2026-06-15,20,,seed
-165,eligibility,Daily Dupes,2026-06-16,52,,seed
-166,eligibility,NWFA (EDI),2026-06-15,18,,seed
-167,eligibility,MetLife (Carrier),2026-06-09,5,,seed
-168,eligibility,OED Errors (EDI),2026-06-12,5,,seed
-169,admin,Mass Terms (Count),2026-01-02,4932,147727.38,seed
-170,admin,Mass Terms (Count),2026-01-08,901,26891.83,seed
-171,admin,Mass Terms (Count),2026-01-15,81,2629.73,seed
-172,admin,Mass Terms (Count),2026-01-22,54,2156.73,seed
-173,admin,Mass Terms (Count),2026-01-29,13,388,seed
-174,admin,Mass Terms (Count),2026-02-05,5678,169380.8,seed
-175,admin,Mass Terms (Count),2026-02-12,710,19653.78,seed
-176,admin,Mass Terms (Count),2026-02-19,51,1709.85,seed
-177,admin,Mass Terms (Count),2026-02-26,41,1255.53,seed
-178,admin,Mass Terms (Count),2026-03-05,4694,140552.65,seed
-179,admin,Mass Terms (Count),2026-03-12,875,26336.61,seed
-180,admin,Mass Terms (Count),2026-03-19,54,1502.32,seed
-181,admin,Mass Terms (Count),2026-03-26,43,969.5,seed
-182,admin,Mass Terms (Count),2026-04-02,4537,135372.43,seed
-183,admin,Mass Terms (Count),2026-04-09,1148,34713.42,seed
-184,admin,Mass Terms (Count),2026-04-16,148,4761.83,seed
-185,admin,Mass Terms (Count),2026-04-23,966,29899.54,seed
-186,admin,Mass Terms (Count),2026-04-30,210,5759.4,seed
-187,admin,Mass Terms (Count),2026-05-07,4293,129770.9,seed
-188,admin,Mass Terms (Count),2026-05-14,470,14463.84,seed
-189,admin,Mass Terms (Count),2026-05-21,73,2013.06,seed
-190,admin,Mass Terms (Count),2026-05-28,41,1488.78,seed
-191,admin,Mass Terms (Count),2026-06-04,5499,170999.78,seed
-192,admin,Mass Terms (Count),2026-06-11,968,29842.31,seed
-193,admin,Policies on Hold 2+ Mo.,2026-01-09,24,,seed
-194,admin,Policies on Hold 2+ Mo.,2026-01-23,31,,seed
-195,admin,Policies on Hold 2+ Mo.,2026-02-06,30,,seed
-196,admin,Policies on Hold 2+ Mo.,2026-02-20,23,,seed
-197,admin,Policies on Hold 2+ Mo.,2026-03-06,26,,seed
-198,admin,Policies on Hold 2+ Mo.,2026-03-12,27,,seed
-199,admin,Policies on Hold 2+ Mo.,2026-03-20,27,,seed
-200,admin,Policies on Hold 2+ Mo.,2026-03-26,32,,seed
-201,admin,Policies on Hold 2+ Mo.,2026-04-03,41,,seed
-202,admin,Policies on Hold 2+ Mo.,2026-04-10,33,,seed
-203,admin,Policies on Hold 2+ Mo.,2026-04-17,32,,seed
-204,admin,Policies on Hold 2+ Mo.,2026-04-24,28,,seed
-205,admin,Policies on Hold 2+ Mo.,2026-05-01,24,,seed
-206,admin,Policies on Hold 2+ Mo.,2026-05-08,22,,seed
-207,admin,Policies on Hold 2+ Mo.,2026-05-15,24,,seed
-208,admin,Policies on Hold 2+ Mo.,2026-05-22,18,,seed
-209,admin,Policies on Hold 2+ Mo.,2026-05-29,13,,seed
-210,admin,Policies on Hold 2+ Mo.,2026-06-05,13,,seed
-211,admin,Policies on Hold 2+ Mo.,2026-06-12,8,,seed
-212,admin,Policies on Hold 2+ Mo.,2026-06-19,19,,seed
-213,admin,Policies on Hold 2+ Mo.,2026-06-26,23,,seed
-214,admin,SRs Aged 30 Days,2026-01-12,2,,seed
-215,admin,SRs Aged 30 Days,2026-01-22,16,,seed
-216,admin,SRs Aged 30 Days,2026-02-05,14,,seed
-217,admin,SRs Aged 30 Days,2026-02-20,29,,seed
-218,admin,SRs Aged 30 Days,2026-03-05,21,,seed
-219,admin,SRs Aged 30 Days,2026-03-19,27,,seed
-220,admin,SRs Aged 30 Days,2026-04-03,22,,seed
-221,admin,SRs Aged 30 Days,2026-04-17,30,,seed
-222,admin,SRs Aged 30 Days,2026-05-01,31,,seed
-223,admin,SRs Aged 30 Days,2026-05-15,18,,seed
-224,admin,SRs Aged 30 Days,2026-05-29,22,,seed
-225,admin,SRs Aged 30 Days,2026-06-10,22,,seed
-226,admin,SRs Aged 30 Days,2026-06-25,25,,seed
-227,admin,Age Outs – Final Notice,2026-01-02,20,,seed
-228,admin,Age Outs – Final Notice,2026-02-02,22,,seed
-229,admin,Age Outs – Final Notice,2026-03-02,20,,seed
-230,admin,Age Outs – Final Notice,2026-05-04,20,,seed
-231,admin,Age Outs – Final Notice,2026-05-29,21,,seed
-232,admin,Age Outs – 30-Day Notice,2026-01-02,16,,seed
-233,admin,Age Outs – 30-Day Notice,2026-02-02,18,,seed
-234,admin,Age Outs – 30-Day Notice,2026-03-02,15,,seed
-235,admin,Age Outs – 30-Day Notice,2026-05-04,22,,seed
-236,admin,Age Outs – 30-Day Notice,2026-06-02,20,,seed
+1,eligibility,OED Errors (EDI),2026-01-02,5.0,,seed
+2,eligibility,MetLife (EDI),2026-01-05,50.0,,seed
+3,eligibility,VSP (EDI),2026-01-05,22.0,,seed
+4,eligibility,VSP Carrier,2026-01-05,13.0,,seed
+5,eligibility,Daily Dupes,2026-01-05,50.0,,seed
+6,eligibility,NWFA (EDI),2026-01-05,11.0,,seed
+7,eligibility,MetLife (EDI),2026-01-12,37.0,,seed
+8,eligibility,VSP (EDI),2026-01-12,53.0,,seed
+9,eligibility,VSP Carrier,2026-01-12,8.0,,seed
+10,eligibility,Daily Dupes,2026-01-12,66.0,,seed
+11,eligibility,NWFA (EDI),2026-01-12,30.0,,seed
+12,eligibility,OED Errors (EDI),2026-01-12,16.0,,seed
+13,eligibility,MetLife (Carrier),2026-01-12,8.0,,seed
+14,eligibility,MetLife (EDI),2026-01-19,24.0,,seed
+15,eligibility,VSP (EDI),2026-01-19,43.0,,seed
+16,eligibility,VSP Carrier,2026-01-19,8.0,,seed
+17,eligibility,Daily Dupes,2026-01-19,80.0,,seed
+18,eligibility,NWFA (EDI),2026-01-19,31.0,,seed
+19,eligibility,MetLife (Carrier),2026-01-19,9.0,,seed
+20,eligibility,MetLife (EDI),2026-01-26,87.0,,seed
+21,eligibility,VSP (EDI),2026-01-26,37.0,,seed
+22,eligibility,VSP Carrier,2026-01-26,8.0,,seed
+23,eligibility,Daily Dupes,2026-01-26,45.0,,seed
+24,eligibility,NWFA (EDI),2026-01-26,30.0,,seed
+25,eligibility,MetLife (Carrier),2026-01-26,9.0,,seed
+26,eligibility,Careington (Carrier),2026-01-21,1.0,,seed
+27,eligibility,MetLife (EDI),2026-02-02,93.0,,seed
+28,eligibility,VSP (EDI),2026-02-02,68.0,,seed
+29,eligibility,VSP Carrier,2026-02-02,13.0,,seed
+30,eligibility,Daily Dupes,2026-02-02,86.0,,seed
+31,eligibility,NWFA (EDI),2026-02-02,32.0,,seed
+32,eligibility,MetLife (Carrier),2026-02-02,9.0,,seed
+33,eligibility,OED Errors (EDI),2026-02-02,10.0,,seed
+34,eligibility,MetLife (EDI),2026-02-09,58.0,,seed
+35,eligibility,VSP (EDI),2026-02-09,52.0,,seed
+36,eligibility,VSP Carrier,2026-02-09,7.0,,seed
+37,eligibility,Daily Dupes,2026-02-09,56.0,,seed
+38,eligibility,NWFA (EDI),2026-02-09,20.0,,seed
+39,eligibility,MetLife (Carrier),2026-02-09,5.0,,seed
+40,eligibility,OED Errors (EDI),2026-02-09,16.0,,seed
+41,eligibility,MetLife (EDI),2026-02-15,74.0,,seed
+42,eligibility,VSP (EDI),2026-02-15,82.0,,seed
+43,eligibility,VSP Carrier,2026-02-15,11.0,,seed
+44,eligibility,Daily Dupes,2026-02-15,36.0,,seed
+45,eligibility,NWFA (EDI),2026-02-15,30.0,,seed
+46,eligibility,MetLife (Carrier),2026-02-15,17.0,,seed
+47,eligibility,OED Errors (EDI),2026-02-15,13.0,,seed
+48,eligibility,MetLife (EDI),2026-02-23,50.0,,seed
+49,eligibility,VSP (EDI),2026-02-23,55.0,,seed
+50,eligibility,VSP Carrier,2026-02-23,8.0,,seed
+51,eligibility,Daily Dupes,2026-02-23,41.0,,seed
+52,eligibility,NWFA (EDI),2026-02-23,17.0,,seed
+53,eligibility,MetLife (Carrier),2026-02-23,15.0,,seed
+54,eligibility,OED Errors (EDI),2026-02-23,16.0,,seed
+55,eligibility,MetLife (EDI),2026-03-01,68.0,,seed
+56,eligibility,VSP (EDI),2026-03-01,79.0,,seed
+57,eligibility,VSP Carrier,2026-03-01,13.0,,seed
+58,eligibility,Daily Dupes,2026-03-01,38.0,,seed
+59,eligibility,NWFA (EDI),2026-03-01,42.0,,seed
+60,eligibility,MetLife (Carrier),2026-03-01,8.0,,seed
+61,eligibility,OED Errors (EDI),2026-03-01,13.0,,seed
+62,eligibility,MetLife (EDI),2026-03-08,63.0,,seed
+63,eligibility,VSP (EDI),2026-03-08,72.0,,seed
+64,eligibility,VSP Carrier,2026-03-08,8.0,,seed
+65,eligibility,Daily Dupes,2026-03-08,37.0,,seed
+66,eligibility,NWFA (EDI),2026-03-08,23.0,,seed
+67,eligibility,MetLife (Carrier),2026-03-08,9.0,,seed
+68,eligibility,OED Errors (EDI),2026-03-08,8.0,,seed
+69,eligibility,MetLife (EDI),2026-03-15,49.0,,seed
+70,eligibility,VSP (EDI),2026-03-15,70.0,,seed
+71,eligibility,VSP Carrier,2026-03-15,16.0,,seed
+72,eligibility,Daily Dupes,2026-03-15,30.0,,seed
+73,eligibility,NWFA (EDI),2026-03-15,17.0,,seed
+74,eligibility,MetLife (Carrier),2026-03-15,7.0,,seed
+75,eligibility,OED Errors (EDI),2026-03-15,9.0,,seed
+76,eligibility,MetLife (EDI),2026-03-22,50.0,,seed
+77,eligibility,VSP (EDI),2026-03-22,97.0,,seed
+78,eligibility,VSP Carrier,2026-03-22,24.0,,seed
+79,eligibility,Daily Dupes,2026-03-22,50.0,,seed
+80,eligibility,NWFA (EDI),2026-03-22,18.0,,seed
+81,eligibility,MetLife (Carrier),2026-03-22,18.0,,seed
+82,eligibility,OED Errors (EDI),2026-03-22,15.0,,seed
+83,eligibility,MetLife (EDI),2026-03-29,30.0,,seed
+84,eligibility,VSP (EDI),2026-03-29,77.0,,seed
+85,eligibility,VSP Carrier,2026-03-29,37.0,,seed
+86,eligibility,Daily Dupes,2026-03-29,52.0,,seed
+87,eligibility,NWFA (EDI),2026-03-29,15.0,,seed
+88,eligibility,MetLife (Carrier),2026-03-29,11.0,,seed
+89,eligibility,OED Errors (EDI),2026-03-29,4.0,,seed
+90,eligibility,MetLife (EDI),2026-04-05,57.0,,seed
+91,eligibility,VSP (EDI),2026-04-05,53.0,,seed
+92,eligibility,VSP Carrier,2026-04-05,26.0,,seed
+93,eligibility,Daily Dupes,2026-04-05,44.0,,seed
+94,eligibility,NWFA (EDI),2026-04-05,21.0,,seed
+95,eligibility,MetLife (Carrier),2026-04-05,8.0,,seed
+96,eligibility,OED Errors (EDI),2026-04-05,8.0,,seed
+97,eligibility,Zurich (e123),2026-04-05,3.0,,seed
+98,eligibility,MetLife (EDI),2026-04-12,44.0,,seed
+99,eligibility,VSP (EDI),2026-04-12,77.0,,seed
+100,eligibility,VSP Carrier,2026-04-12,49.0,,seed
+101,eligibility,Daily Dupes,2026-04-12,63.0,,seed
+102,eligibility,NWFA (EDI),2026-04-12,23.0,,seed
+103,eligibility,MetLife (Carrier),2026-04-12,8.0,,seed
+104,eligibility,OED Errors (EDI),2026-04-12,11.0,,seed
+105,eligibility,Zurich (e123),2026-04-12,2.0,,seed
+106,eligibility,MetLife (EDI),2026-04-19,63.0,,seed
+107,eligibility,VSP (EDI),2026-04-19,52.0,,seed
+108,eligibility,VSP Carrier,2026-04-19,16.0,,seed
+109,eligibility,Daily Dupes,2026-04-19,46.0,,seed
+110,eligibility,NWFA (EDI),2026-04-19,26.0,,seed
+111,eligibility,MetLife (Carrier),2026-04-19,16.0,,seed
+112,eligibility,OED Errors (EDI),2026-04-19,18.0,,seed
+113,eligibility,MetLife (EDI),2026-04-26,30.0,,seed
+114,eligibility,VSP (EDI),2026-04-26,39.0,,seed
+115,eligibility,VSP Carrier,2026-04-26,7.0,,seed
+116,eligibility,Daily Dupes,2026-04-26,34.0,,seed
+117,eligibility,NWFA (EDI),2026-04-26,11.0,,seed
+118,eligibility,MetLife (Carrier),2026-04-26,5.0,,seed
+119,eligibility,Zurich (e123),2026-04-26,3.0,,seed
+120,eligibility,MetLife (EDI),2026-05-03,82.0,,seed
+121,eligibility,VSP (EDI),2026-05-03,82.0,,seed
+122,eligibility,VSP Carrier,2026-05-03,25.0,,seed
+123,eligibility,Daily Dupes,2026-05-03,56.0,,seed
+124,eligibility,NWFA (EDI),2026-05-03,41.0,,seed
+125,eligibility,MetLife (Carrier),2026-05-03,16.0,,seed
+126,eligibility,Zurich (e123),2026-05-02,3.0,,seed
+127,eligibility,MetLife (EDI),2026-05-10,62.0,,seed
+128,eligibility,VSP (EDI),2026-05-10,60.0,,seed
+129,eligibility,VSP Carrier,2026-05-10,23.0,,seed
+130,eligibility,Daily Dupes,2026-05-10,43.0,,seed
+131,eligibility,NWFA (EDI),2026-05-10,9.0,,seed
+132,eligibility,MetLife (Carrier),2026-05-10,8.0,,seed
+133,eligibility,Zurich (e123),2026-05-10,3.0,,seed
+134,eligibility,MetLife (EDI),2026-05-17,48.0,,seed
+135,eligibility,VSP (EDI),2026-05-17,62.0,,seed
+136,eligibility,VSP Carrier,2026-05-17,21.0,,seed
+137,eligibility,Daily Dupes,2026-05-17,62.0,,seed
+138,eligibility,NWFA (EDI),2026-05-17,23.0,,seed
+139,eligibility,MetLife (Carrier),2026-05-17,19.0,,seed
+140,eligibility,Zurich (e123),2026-05-17,2.0,,seed
+141,eligibility,MetLife (EDI),2026-05-24,33.0,,seed
+142,eligibility,VSP (EDI),2026-05-24,39.0,,seed
+143,eligibility,VSP Carrier,2026-05-24,10.0,,seed
+144,eligibility,Daily Dupes,2026-05-24,38.0,,seed
+145,eligibility,NWFA (EDI),2026-05-24,19.0,,seed
+146,eligibility,MetLife (Carrier),2026-05-24,11.0,,seed
+147,eligibility,MetLife (EDI),2026-05-31,38.0,,seed
+148,eligibility,VSP (EDI),2026-05-31,48.0,,seed
+149,eligibility,VSP Carrier,2026-05-31,19.0,,seed
+150,eligibility,Daily Dupes,2026-05-31,37.0,,seed
+151,eligibility,NWFA (EDI),2026-05-31,13.0,,seed
+152,eligibility,MetLife (Carrier),2026-05-31,17.0,,seed
+153,eligibility,OED Errors (EDI),2026-05-31,8.0,,seed
+154,eligibility,MetLife (EDI),2026-06-07,37.0,,seed
+155,eligibility,VSP (EDI),2026-06-07,50.0,,seed
+156,eligibility,VSP Carrier,2026-06-07,14.0,,seed
+157,eligibility,Daily Dupes,2026-06-07,67.0,,seed
+158,eligibility,NWFA (EDI),2026-06-07,22.0,,seed
+159,eligibility,MetLife (Carrier),2026-06-07,10.0,,seed
+160,eligibility,OED Errors (EDI),2026-06-07,9.0,,seed
+161,eligibility,VSP (EDI),2026-06-08,49.0,,seed
+162,eligibility,MetLife (EDI),2026-06-15,34.0,,seed
+163,eligibility,VSP (EDI),2026-06-15,73.0,,seed
+164,eligibility,VSP Carrier,2026-06-15,20.0,,seed
+165,eligibility,Daily Dupes,2026-06-16,52.0,,seed
+166,eligibility,NWFA (EDI),2026-06-15,18.0,,seed
+167,eligibility,MetLife (Carrier),2026-06-09,5.0,,seed
+168,eligibility,OED Errors (EDI),2026-06-12,5.0,,seed
+169,admin,Mass Terms (Count),2026-01-02,4932.0,147727.38,seed
+170,admin,Mass Terms (Count),2026-01-08,901.0,26891.83,seed
+171,admin,Mass Terms (Count),2026-01-15,81.0,2629.73,seed
+172,admin,Mass Terms (Count),2026-01-22,54.0,2156.73,seed
+173,admin,Mass Terms (Count),2026-01-29,13.0,388.0,seed
+174,admin,Mass Terms (Count),2026-02-05,5678.0,169380.8,seed
+175,admin,Mass Terms (Count),2026-02-12,710.0,19653.78,seed
+176,admin,Mass Terms (Count),2026-02-19,51.0,1709.85,seed
+177,admin,Mass Terms (Count),2026-02-26,41.0,1255.53,seed
+178,admin,Mass Terms (Count),2026-03-05,4694.0,140552.65,seed
+179,admin,Mass Terms (Count),2026-03-12,875.0,26336.61,seed
+180,admin,Mass Terms (Count),2026-03-19,54.0,1502.32,seed
+181,admin,Mass Terms (Count),2026-03-26,43.0,969.5,seed
+182,admin,Mass Terms (Count),2026-04-02,4537.0,135372.43,seed
+183,admin,Mass Terms (Count),2026-04-09,1148.0,34713.42,seed
+184,admin,Mass Terms (Count),2026-04-16,148.0,4761.83,seed
+185,admin,Mass Terms (Count),2026-04-23,966.0,29899.54,seed
+186,admin,Mass Terms (Count),2026-04-30,210.0,5759.4,seed
+187,admin,Mass Terms (Count),2026-05-07,4293.0,129770.9,seed
+188,admin,Mass Terms (Count),2026-05-14,470.0,14463.84,seed
+189,admin,Mass Terms (Count),2026-05-21,73.0,2013.06,seed
+190,admin,Mass Terms (Count),2026-05-28,41.0,1488.78,seed
+191,admin,Mass Terms (Count),2026-06-04,5499.0,170999.78,seed
+192,admin,Mass Terms (Count),2026-06-11,968.0,29842.31,seed
+193,admin,Policies on Hold 2+ Mo.,2026-01-09,24.0,,seed
+194,admin,Policies on Hold 2+ Mo.,2026-01-23,31.0,,seed
+195,admin,Policies on Hold 2+ Mo.,2026-02-06,30.0,,seed
+196,admin,Policies on Hold 2+ Mo.,2026-02-20,23.0,,seed
+197,admin,Policies on Hold 2+ Mo.,2026-03-06,26.0,,seed
+198,admin,Policies on Hold 2+ Mo.,2026-03-12,27.0,,seed
+199,admin,Policies on Hold 2+ Mo.,2026-03-20,27.0,,seed
+200,admin,Policies on Hold 2+ Mo.,2026-03-26,32.0,,seed
+201,admin,Policies on Hold 2+ Mo.,2026-04-03,41.0,,seed
+202,admin,Policies on Hold 2+ Mo.,2026-04-10,33.0,,seed
+203,admin,Policies on Hold 2+ Mo.,2026-04-17,32.0,,seed
+204,admin,Policies on Hold 2+ Mo.,2026-04-24,28.0,,seed
+205,admin,Policies on Hold 2+ Mo.,2026-05-01,24.0,,seed
+206,admin,Policies on Hold 2+ Mo.,2026-05-08,22.0,,seed
+207,admin,Policies on Hold 2+ Mo.,2026-05-15,24.0,,seed
+208,admin,Policies on Hold 2+ Mo.,2026-05-22,18.0,,seed
+209,admin,Policies on Hold 2+ Mo.,2026-05-29,13.0,,seed
+210,admin,Policies on Hold 2+ Mo.,2026-06-05,13.0,,seed
+211,admin,Policies on Hold 2+ Mo.,2026-06-12,8.0,,seed
+212,admin,Policies on Hold 2+ Mo.,2026-06-19,19.0,,seed
+213,admin,Policies on Hold 2+ Mo.,2026-06-26,23.0,,seed
+214,admin,SRs Aged 30 Days,2026-01-12,2.0,,seed
+215,admin,SRs Aged 30 Days,2026-01-22,16.0,,seed
+216,admin,SRs Aged 30 Days,2026-02-05,14.0,,seed
+217,admin,SRs Aged 30 Days,2026-02-20,29.0,,seed
+218,admin,SRs Aged 30 Days,2026-03-05,21.0,,seed
+219,admin,SRs Aged 30 Days,2026-03-19,27.0,,seed
+220,admin,SRs Aged 30 Days,2026-04-03,22.0,,seed
+221,admin,SRs Aged 30 Days,2026-04-17,30.0,,seed
+222,admin,SRs Aged 30 Days,2026-05-01,31.0,,seed
+223,admin,SRs Aged 30 Days,2026-05-15,18.0,,seed
+224,admin,SRs Aged 30 Days,2026-05-29,22.0,,seed
+225,admin,SRs Aged 30 Days,2026-06-10,22.0,,seed
+226,admin,SRs Aged 30 Days,2026-06-25,25.0,,seed
+227,admin,Age Outs – Final Notice,2026-01-02,20.0,,seed
+228,admin,Age Outs – Final Notice,2026-02-02,22.0,,seed
+229,admin,Age Outs – Final Notice,2026-03-02,20.0,,seed
+230,admin,Age Outs – Final Notice,2026-05-04,20.0,,seed
+231,admin,Age Outs – Final Notice,2026-05-29,21.0,,seed
+232,admin,Age Outs – 30-Day Notice,2026-01-02,16.0,,seed
+233,admin,Age Outs – 30-Day Notice,2026-02-02,18.0,,seed
+234,admin,Age Outs – 30-Day Notice,2026-03-02,15.0,,seed
+235,admin,Age Outs – 30-Day Notice,2026-05-04,22.0,,seed
+236,admin,Age Outs – 30-Day Notice,2026-06-02,20.0,,seed
 237,billing,ACH Rebill (Recapture),2026-01-06,,18318.79,seed
-238,billing,FBD in the Past,2026-01-07,9,,seed
-239,billing,NBD in the Past,2026-01-08,39,,seed
-240,billing,Account Updater,2026-01-09,7,556.03,seed
-241,billing,Account Updater,2026-01-16,8,639,seed
-242,billing,FBD in the Past,2026-01-14,26,,seed
-243,billing,NBD in the Past,2026-01-15,48,,seed
+238,billing,FBD in the Past,2026-01-07,9.0,,seed
+239,billing,NBD in the Past,2026-01-08,39.0,,seed
+240,billing,Account Updater,2026-01-09,7.0,556.03,seed
+241,billing,Account Updater,2026-01-16,8.0,639.0,seed
+242,billing,FBD in the Past,2026-01-14,26.0,,seed
+243,billing,NBD in the Past,2026-01-15,48.0,,seed
 244,billing,ACH Rebill (Recapture),2026-01-13,,5075.16,seed
-245,billing,FBD in the Past,2026-01-21,40,,seed
-246,billing,NBD in the Past,2026-01-22,42,,seed
+245,billing,FBD in the Past,2026-01-21,40.0,,seed
+246,billing,NBD in the Past,2026-01-22,42.0,,seed
 247,billing,ACH Rebill (Recapture),2026-01-20,,6808.77,seed
-248,billing,Blank FBD,2026-02-25,11,,seed
-249,billing,FPN Update (ACH Rebill 2+ Attempts),2026-01-27,142,,seed
-250,billing,Billing Alignment,2026-01-27,18,,seed
-251,billing,Blank NBD,2026-01-28,114,,seed
-252,billing,FBD in the Past,2026-01-28,41,,seed
-253,billing,NBD in the Past,2026-01-29,20,,seed
+248,billing,Blank FBD,2026-02-25,11.0,,seed
+249,billing,FPN Update (ACH Rebill 2+ Attempts),2026-01-27,142.0,,seed
+250,billing,Billing Alignment,2026-01-27,18.0,,seed
+251,billing,Blank NBD,2026-01-28,114.0,,seed
+252,billing,FBD in the Past,2026-01-28,41.0,,seed
+253,billing,NBD in the Past,2026-01-29,20.0,,seed
 254,billing,ACH Rebill (Recapture),2026-01-26,,10107.04,seed
-255,billing,Blank FBD,2026-03-11,2,,seed
-256,billing,FPN Update (ACH Rebill 2+ Attempts),2026-02-10,174,,seed
-257,billing,Billing Alignment,2026-02-10,14,,seed
-258,billing,Blank NBD,2026-02-11,3,,seed
-259,billing,FBD in the Past,2026-02-11,100,,seed
-260,billing,NBD in the Past,2026-02-12,52,,seed
+255,billing,Blank FBD,2026-03-11,2.0,,seed
+256,billing,FPN Update (ACH Rebill 2+ Attempts),2026-02-10,174.0,,seed
+257,billing,Billing Alignment,2026-02-10,14.0,,seed
+258,billing,Blank NBD,2026-02-11,3.0,,seed
+259,billing,FBD in the Past,2026-02-11,100.0,,seed
+260,billing,NBD in the Past,2026-02-12,52.0,,seed
 261,billing,ACH Rebill (Recapture),2026-02-09,,13071.52,seed
-262,billing,Blank FBD,2026-03-18,3,,seed
-263,billing,FPN Update (ACH Rebill 2+ Attempts),2026-02-24,153,,seed
-264,billing,Billing Alignment,2026-02-24,19,,seed
-265,billing,FBD in the Past,2026-02-25,91,,seed
-266,billing,NBD in the Past,2026-02-26,9,,seed
+262,billing,Blank FBD,2026-03-18,3.0,,seed
+263,billing,FPN Update (ACH Rebill 2+ Attempts),2026-02-24,153.0,,seed
+264,billing,Billing Alignment,2026-02-24,19.0,,seed
+265,billing,FBD in the Past,2026-02-25,91.0,,seed
+266,billing,NBD in the Past,2026-02-26,9.0,,seed
 267,billing,ACH Rebill (Recapture),2026-02-23,,5862.23,seed
-268,billing,Blank FBD,2026-03-25,1,,seed
-269,billing,FPN Update (ACH Rebill 2+ Attempts),2026-03-10,163,,seed
-270,billing,Billing Alignment,2026-03-10,18,,seed
-271,billing,FBD in the Past,2026-03-11,102,,seed
-272,billing,NBD in the Past,2026-03-12,22,,seed
+268,billing,Blank FBD,2026-03-25,1.0,,seed
+269,billing,FPN Update (ACH Rebill 2+ Attempts),2026-03-10,163.0,,seed
+270,billing,Billing Alignment,2026-03-10,18.0,,seed
+271,billing,FBD in the Past,2026-03-11,102.0,,seed
+272,billing,NBD in the Past,2026-03-12,22.0,,seed
 273,billing,ACH Rebill (Recapture),2026-03-09,,7983.07,seed
-274,billing,Blank FBD,2026-04-01,1,,seed
-275,billing,FPN Update (ACH Rebill 2+ Attempts),2026-03-24,193,,seed
-276,billing,Billing Alignment,2026-03-24,27,,seed
-277,billing,FBD in the Past,2026-03-25,73,,seed
-278,billing,NBD in the Past,2026-03-26,24,,seed
+274,billing,Blank FBD,2026-04-01,1.0,,seed
+275,billing,FPN Update (ACH Rebill 2+ Attempts),2026-03-24,193.0,,seed
+276,billing,Billing Alignment,2026-03-24,27.0,,seed
+277,billing,FBD in the Past,2026-03-25,73.0,,seed
+278,billing,NBD in the Past,2026-03-26,24.0,,seed
 279,billing,ACH Rebill (Recapture),2026-03-23,,19327.96,seed
-280,billing,Blank FBD,2026-04-08,2,,seed
-281,billing,Blank NBD,2026-04-08,2,,seed
-282,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-07,179,,seed
-283,billing,Billing Alignment,2026-04-07,24,,seed
-284,billing,FBD in the Past,2026-04-08,62,,seed
-285,billing,NBD in the Past,2026-04-09,40,,seed
+280,billing,Blank FBD,2026-04-08,2.0,,seed
+281,billing,Blank NBD,2026-04-08,2.0,,seed
+282,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-07,179.0,,seed
+283,billing,Billing Alignment,2026-04-07,24.0,,seed
+284,billing,FBD in the Past,2026-04-08,62.0,,seed
+285,billing,NBD in the Past,2026-04-09,40.0,,seed
 286,billing,ACH Rebill (Recapture),2026-04-06,,16542.04,seed
-287,billing,Blank FBD,2026-04-15,3,,seed
-288,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-14,135,,seed
-289,billing,Billing Alignment,2026-04-14,25,,seed
-290,billing,FBD in the Past,2026-04-15,40,,seed
-291,billing,NBD in the Past,2026-04-16,24,,seed
+287,billing,Blank FBD,2026-04-15,3.0,,seed
+288,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-14,135.0,,seed
+289,billing,Billing Alignment,2026-04-14,25.0,,seed
+290,billing,FBD in the Past,2026-04-15,40.0,,seed
+291,billing,NBD in the Past,2026-04-16,24.0,,seed
 292,billing,ACH Rebill (Recapture),2026-04-13,,12555.69,seed
-293,billing,Blank FBD,2026-04-22,1,,seed
-294,billing,Blank NBD,2026-04-22,2,,seed
-295,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-21,123,,seed
-296,billing,Billing Alignment,2026-04-21,21,,seed
-297,billing,FBD in the Past,2026-04-22,33,,seed
-298,billing,NBD in the Past,2026-04-23,40,,seed
+293,billing,Blank FBD,2026-04-22,1.0,,seed
+294,billing,Blank NBD,2026-04-22,2.0,,seed
+295,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-21,123.0,,seed
+296,billing,Billing Alignment,2026-04-21,21.0,,seed
+297,billing,FBD in the Past,2026-04-22,33.0,,seed
+298,billing,NBD in the Past,2026-04-23,40.0,,seed
 299,billing,ACH Rebill (Recapture),2026-04-20,,4895.31,seed
-300,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-28,142,,seed
-301,billing,Billing Alignment,2026-04-28,16,,seed
-302,billing,FBD in the Past,2026-04-29,24,,seed
-303,billing,NBD in the Past,2026-04-30,19,,seed
+300,billing,FPN Update (ACH Rebill 2+ Attempts),2026-04-28,142.0,,seed
+301,billing,Billing Alignment,2026-04-28,16.0,,seed
+302,billing,FBD in the Past,2026-04-29,24.0,,seed
+303,billing,NBD in the Past,2026-04-30,19.0,,seed
 304,billing,ACH Rebill (Recapture),2026-04-27,,10111.29,seed
-305,billing,Blank FBD,2026-05-06,2,,seed
-306,billing,Blank NBD,2026-05-06,1,,seed
-307,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-05,141,,seed
-308,billing,Billing Alignment,2026-05-05,17,,seed
-309,billing,FBD in the Past,2026-05-06,12,,seed
-310,billing,NBD in the Past,2026-05-07,69,,seed
+305,billing,Blank FBD,2026-05-06,2.0,,seed
+306,billing,Blank NBD,2026-05-06,1.0,,seed
+307,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-05,141.0,,seed
+308,billing,Billing Alignment,2026-05-05,17.0,,seed
+309,billing,FBD in the Past,2026-05-06,12.0,,seed
+310,billing,NBD in the Past,2026-05-07,69.0,,seed
 311,billing,ACH Rebill (Recapture),2026-05-04,,16681.49,seed
-312,billing,Blank FBD,2026-05-13,5,,seed
-313,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-12,156,,seed
-314,billing,Billing Alignment,2026-05-12,17,,seed
-315,billing,FBD in the Past,2026-05-13,17,,seed
-316,billing,NBD in the Past,2026-05-14,51,,seed
+312,billing,Blank FBD,2026-05-13,5.0,,seed
+313,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-12,156.0,,seed
+314,billing,Billing Alignment,2026-05-12,17.0,,seed
+315,billing,FBD in the Past,2026-05-13,17.0,,seed
+316,billing,NBD in the Past,2026-05-14,51.0,,seed
 317,billing,ACH Rebill (Recapture),2026-05-11,,10061.8,seed
-318,billing,Blank FBD,2026-05-20,3,,seed
-319,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-19,149,,seed
-320,billing,Billing Alignment,2026-05-19,23,,seed
-321,billing,FBD in the Past,2026-05-20,11,,seed
-322,billing,NBD in the Past,2026-05-21,30,,seed
+318,billing,Blank FBD,2026-05-20,3.0,,seed
+319,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-19,149.0,,seed
+320,billing,Billing Alignment,2026-05-19,23.0,,seed
+321,billing,FBD in the Past,2026-05-20,11.0,,seed
+322,billing,NBD in the Past,2026-05-21,30.0,,seed
 323,billing,ACH Rebill (Recapture),2026-05-18,,4395.69,seed
-324,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-26,144,,seed
-325,billing,Billing Alignment,2026-05-26,20,,seed
-326,billing,FBD in the Past,2026-05-27,7,,seed
-327,billing,NBD in the Past,2026-05-28,45,,seed
+324,billing,FPN Update (ACH Rebill 2+ Attempts),2026-05-26,144.0,,seed
+325,billing,Billing Alignment,2026-05-26,20.0,,seed
+326,billing,FBD in the Past,2026-05-27,7.0,,seed
+327,billing,NBD in the Past,2026-05-28,45.0,,seed
 328,billing,ACH Rebill (Recapture),2026-05-25,,7654.34,seed
-329,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-02,139,,seed
-330,billing,Billing Alignment,2026-06-02,15,,seed
-331,billing,FBD in the Past,2026-06-03,7,,seed
-332,billing,NBD in the Past,2026-06-04,67,,seed
+329,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-02,139.0,,seed
+330,billing,Billing Alignment,2026-06-02,15.0,,seed
+331,billing,FBD in the Past,2026-06-03,7.0,,seed
+332,billing,NBD in the Past,2026-06-04,67.0,,seed
 333,billing,ACH Rebill (Recapture),2026-06-01,,11718.09,seed
-334,billing,Blank FBD,2026-06-10,3,,seed
-335,billing,Blank NBD,2026-06-11,2,,seed
-336,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-09,100,,seed
-337,billing,Billing Alignment,2026-06-09,17,,seed
-338,billing,FBD in the Past,2026-06-10,8,,seed
-339,billing,NBD in the Past,2026-06-11,62,,seed
+334,billing,Blank FBD,2026-06-10,3.0,,seed
+335,billing,Blank NBD,2026-06-11,2.0,,seed
+336,billing,FPN Update (ACH Rebill 2+ Attempts),2026-06-09,100.0,,seed
+337,billing,Billing Alignment,2026-06-09,17.0,,seed
+338,billing,FBD in the Past,2026-06-10,8.0,,seed
+339,billing,NBD in the Past,2026-06-11,62.0,,seed
 340,billing,ACH Rebill (Recapture),2026-06-08,,15393.89,seed
 341,billing,ACH Rebill (Recapture),2026-06-15,,5303.22,seed
 342,billing,ACH Rebill (Recapture),2026-06-22,,7289.68,seed
 343,billing,ACH Rebill (Recapture),2026-06-29,,9397.03,seed
 344,billing,ACH Rebill (Recapture),2026-07-06,,23005.97,seed
-345,integrity,No Dependent Products,2026-01-02,9,,seed
-346,integrity,Missing MOP,2026-01-06,2,,seed
-347,integrity,$0 Product Fee,2026-01-06,5,,seed
-348,integrity,No Dependent Products,2026-01-06,3,,seed
-349,integrity,PTD vs Inactive Date,2026-01-06,110,,seed
-350,integrity,Inactive Policies on Hold,2026-01-06,38,,seed
-351,integrity,$0 Product Fee,2026-01-12,1,,seed
-352,integrity,No Dependent Products,2026-01-12,13,,seed
-353,integrity,PTD vs Inactive Date,2026-01-12,120,,seed
-354,integrity,Inactive Policies on Hold,2026-01-12,45,,seed
-355,integrity,$0 Product Fee,2026-01-19,2,,seed
-356,integrity,No Dependent Products,2026-01-19,4,,seed
-357,integrity,PTD vs Inactive Date,2026-01-19,130,,seed
-358,integrity,Missing MOP,2026-01-19,3,,seed
-359,integrity,$0 Product Fee,2026-01-26,1,,seed
-360,integrity,No Dependent Products,2026-01-26,3,,seed
-361,integrity,PTD vs Inactive Date,2026-01-26,108,,seed
-362,integrity,Inactive Policies on Hold,2026-01-26,38,,seed
-363,integrity,$0 Product Fee,2026-02-02,2,,seed
-364,integrity,No Dependent Products,2026-02-02,3,,seed
-365,integrity,PTD vs Inactive Date,2026-02-02,116,,seed
-366,integrity,Inactive Policies on Hold,2026-02-02,31,,seed
-367,integrity,$0 Product Fee,2026-02-09,1,,seed
-368,integrity,No Dependent Products,2026-02-09,7,,seed
-369,integrity,PTD vs Inactive Date,2026-02-09,140,,seed
-370,integrity,Missing MOP,2026-02-09,4,,seed
-371,integrity,$0 Product Fee,2026-02-15,2,,seed
-372,integrity,No Dependent Products,2026-02-15,1,,seed
-373,integrity,PTD vs Inactive Date,2026-02-15,128,,seed
-374,integrity,Inactive Policies on Hold,2026-02-15,26,,seed
-375,integrity,Missing MOP,2026-02-15,3,,seed
-376,integrity,$0 Product Fee,2026-02-23,1,,seed
-377,integrity,No Dependent Products,2026-02-23,3,,seed
-378,integrity,PTD vs Inactive Date,2026-02-23,199,,seed
-379,integrity,Missing MOP,2026-02-23,3,,seed
-380,integrity,$0 Product Fee,2026-03-02,1,,seed
-381,integrity,No Dependent Products,2026-03-02,2,,seed
-382,integrity,PTD vs Inactive Date,2026-03-02,163,,seed
-383,integrity,Inactive Policies on Hold,2026-03-02,17,,seed
-384,integrity,Missing MOP,2026-03-02,4,,seed
-385,integrity,$0 Product Fee,2026-03-09,1,,seed
-386,integrity,No Dependent Products,2026-03-09,4,,seed
-387,integrity,PTD vs Inactive Date,2026-03-09,156,,seed
-388,integrity,$0 Product Fee,2026-03-15,1,,seed
-389,integrity,No Dependent Products,2026-03-15,6,,seed
-390,integrity,PTD vs Inactive Date,2026-03-15,153,,seed
-391,integrity,Inactive Policies on Hold,2026-03-15,26,,seed
-392,integrity,$0 Product Fee,2026-03-22,1,,seed
-393,integrity,No Dependent Products,2026-03-22,5,,seed
-394,integrity,PTD vs Inactive Date,2026-03-22,159,,seed
-395,integrity,$0 Product Fee,2026-03-29,1,,seed
-396,integrity,No Dependent Products,2026-03-29,5,,seed
-397,integrity,PTD vs Inactive Date,2026-03-29,155,,seed
-398,integrity,Inactive Policies on Hold,2026-03-29,33,,seed
-399,integrity,Missing MOP,2026-03-29,1,,seed
-400,integrity,$0 Product Fee,2026-04-05,1,,seed
-401,integrity,No Dependent Products,2026-04-05,3,,seed
-402,integrity,PTD vs Inactive Date,2026-04-05,125,,seed
-403,integrity,$0 Product Fee,2026-04-12,1,,seed
-404,integrity,No Dependent Products,2026-04-12,4,,seed
-405,integrity,PTD vs Inactive Date,2026-04-12,128,,seed
-406,integrity,Inactive Policies on Hold,2026-04-12,40,,seed
-407,integrity,$0 Product Fee,2026-04-19,1,,seed
-408,integrity,No Dependent Products,2026-04-19,3,,seed
-409,integrity,PTD vs Inactive Date,2026-04-19,175,,seed
-410,integrity,$0 Product Fee,2026-04-26,2,,seed
-411,integrity,No Dependent Products,2026-04-26,5,,seed
-412,integrity,PTD vs Inactive Date,2026-04-26,184,,seed
-413,integrity,Inactive Policies on Hold,2026-04-26,28,,seed
-414,integrity,$0 Product Fee,2026-05-03,2,,seed
-415,integrity,No Dependent Products,2026-05-03,2,,seed
-416,integrity,PTD vs Inactive Date,2026-05-03,168,,seed
-417,integrity,Missing MOP,2026-05-03,2,,seed
-418,integrity,$0 Product Fee,2026-05-10,2,,seed
-419,integrity,No Dependent Products,2026-05-10,3,,seed
-420,integrity,PTD vs Inactive Date,2026-05-10,163,,seed
-421,integrity,Inactive Policies on Hold,2026-05-10,24,,seed
-422,integrity,Test Member Accounts,2026-05-12,1,,seed
-423,integrity,$0 Product Fee,2026-05-18,2,,seed
-424,integrity,No Dependent Products,2026-05-18,3,,seed
-425,integrity,PTD vs Inactive Date,2026-05-18,170,,seed
-426,integrity,Missing MOP,2026-05-18,2,,seed
-427,integrity,$0 Product Fee,2026-05-24,1,,seed
-428,integrity,No Dependent Products,2026-05-24,1,,seed
-429,integrity,PTD vs Inactive Date,2026-05-24,175,,seed
-430,integrity,Inactive Policies on Hold,2026-05-24,26,,seed
-431,integrity,$0 Product Fee,2026-06-01,1,,seed
-432,integrity,No Dependent Products,2026-06-01,3,,seed
-433,integrity,Incomplete Accounts,2026-06-01,21,,seed
-434,integrity,PTD vs Inactive Date,2026-06-01,172,,seed
-435,integrity,Blank OED,2026-06-05,1,,seed
-436,integrity,$0 Product Fee,2026-06-08,2,,seed
-437,integrity,No Dependent Products,2026-06-08,2,,seed
-438,integrity,PTD vs Inactive Date,2026-06-08,188,,seed
-439,integrity,Inactive Policies on Hold,2026-06-08,29,,seed
-440,integrity,Missing MOP,2026-06-09,1,,seed
-441,integrity,Blank OED,2026-06-09,6,,seed
-442,integrity,Incomplete Accounts,2026-06-09,1,,seed
-443,integrity,$0 Product Fee,2026-06-11,1,,seed
-444,integrity,No Dependent Products,2026-06-11,2,,seed
-445,integrity,Blank OED,2026-06-11,2,,seed
-446,integrity,Incomplete Accounts,2026-06-11,2,,seed
-447,integrity,$0 Product Fee,2026-06-15,2,,seed
-448,integrity,PTD vs Inactive Date,2026-06-15,192,,seed
-449,integrity,Inactive Policies on Hold,2026-06-12,29,,seed
-450,integrity,Missing MOP,2026-06-15,1,,seed
-451,integrity,Blank OED,2026-06-15,4,,seed
-452,integrity,Incomplete Accounts,2026-06-15,1,,seed
-453,integrity,Missing MOP,2026-12-16,2,,seed
-454,integrity,Test Member Accounts,2026-01-02,10,,seed
-455,integrity,Test Member Accounts,2026-03-19,4,,seed
-456,integrity,No Dependent Products,2026-06-15,1,,seed
-457,integrity,Incomplete Accounts,2026-06-15,2,,seed
-458,integrity,Blank OED,2026-06-19,2,,seed
-459,integrity,Incomplete Accounts,2026-06-19,2,,seed
-460,integrity,Blank OED,2026-06-23,1,,seed
-461,integrity,Blank OED,2026-06-25,6,,seed
-462,integrity,Blank OED,2026-06-27,1,,seed
-463,integrity,Blank OED,2026-06-29,2,,seed
-464,integrity,Blank OED,2026-07-01,4,,seed
-465,integrity,Blank OED,2026-07-03,2,,seed
-466,integrity,Blank OED,2026-07-07,1,,seed
-467,integrity,Blank OED,2026-07-09,10,,seed
-468,listbill,LB MOP (Non-LB Members),2025-08-01,0,,seed
-469,listbill,LB NBD in the Past,2025-08-01,172,,seed
-470,listbill,LB FBD in the Past,2025-08-01,7,,seed
-471,listbill,LB NBD in the Past,2025-08-28,96,,seed
-472,listbill,LB MOP (Non-LB Members),2025-10-07,0,,seed
-473,listbill,LB NBD in the Past,2025-09-03,151,,seed
-474,listbill,LB NBD in the Past,2025-09-25,0,,seed
-475,listbill,LB FBD in the Past,2025-10-07,0,,seed
-476,listbill,LB NBD in the Past,2025-10-07,18,,seed
-
+345,integrity,No Dependent Products,2026-01-02,9.0,,seed
+346,integrity,Missing MOP,2026-01-06,2.0,,seed
+347,integrity,$0 Product Fee,2026-01-06,5.0,,seed
+348,integrity,No Dependent Products,2026-01-06,3.0,,seed
+349,integrity,PTD vs Inactive Date,2026-01-06,110.0,,seed
+350,integrity,Inactive Policies on Hold,2026-01-06,38.0,,seed
+351,integrity,$0 Product Fee,2026-01-12,1.0,,seed
+352,integrity,No Dependent Products,2026-01-12,13.0,,seed
+353,integrity,PTD vs Inactive Date,2026-01-12,120.0,,seed
+354,integrity,Inactive Policies on Hold,2026-01-12,45.0,,seed
+355,integrity,$0 Product Fee,2026-01-19,2.0,,seed
+356,integrity,No Dependent Products,2026-01-19,4.0,,seed
+357,integrity,PTD vs Inactive Date,2026-01-19,130.0,,seed
+358,integrity,Missing MOP,2026-01-19,3.0,,seed
+359,integrity,$0 Product Fee,2026-01-26,1.0,,seed
+360,integrity,No Dependent Products,2026-01-26,3.0,,seed
+361,integrity,PTD vs Inactive Date,2026-01-26,108.0,,seed
+362,integrity,Inactive Policies on Hold,2026-01-26,38.0,,seed
+363,integrity,$0 Product Fee,2026-02-02,2.0,,seed
+364,integrity,No Dependent Products,2026-02-02,3.0,,seed
+365,integrity,PTD vs Inactive Date,2026-02-02,116.0,,seed
+366,integrity,Inactive Policies on Hold,2026-02-02,31.0,,seed
+367,integrity,$0 Product Fee,2026-02-09,1.0,,seed
+368,integrity,No Dependent Products,2026-02-09,7.0,,seed
+369,integrity,PTD vs Inactive Date,2026-02-09,140.0,,seed
+370,integrity,Missing MOP,2026-02-09,4.0,,seed
+371,integrity,$0 Product Fee,2026-02-15,2.0,,seed
+372,integrity,No Dependent Products,2026-02-15,1.0,,seed
+373,integrity,PTD vs Inactive Date,2026-02-15,128.0,,seed
+374,integrity,Inactive Policies on Hold,2026-02-15,26.0,,seed
+375,integrity,Missing MOP,2026-02-15,3.0,,seed
+376,integrity,$0 Product Fee,2026-02-23,1.0,,seed
+377,integrity,No Dependent Products,2026-02-23,3.0,,seed
+378,integrity,PTD vs Inactive Date,2026-02-23,199.0,,seed
+379,integrity,Missing MOP,2026-02-23,3.0,,seed
+380,integrity,$0 Product Fee,2026-03-02,1.0,,seed
+381,integrity,No Dependent Products,2026-03-02,2.0,,seed
+382,integrity,PTD vs Inactive Date,2026-03-02,163.0,,seed
+383,integrity,Inactive Policies on Hold,2026-03-02,17.0,,seed
+384,integrity,Missing MOP,2026-03-02,4.0,,seed
+385,integrity,$0 Product Fee,2026-03-09,1.0,,seed
+386,integrity,No Dependent Products,2026-03-09,4.0,,seed
+387,integrity,PTD vs Inactive Date,2026-03-09,156.0,,seed
+388,integrity,$0 Product Fee,2026-03-15,1.0,,seed
+389,integrity,No Dependent Products,2026-03-15,6.0,,seed
+390,integrity,PTD vs Inactive Date,2026-03-15,153.0,,seed
+391,integrity,Inactive Policies on Hold,2026-03-15,26.0,,seed
+392,integrity,$0 Product Fee,2026-03-22,1.0,,seed
+393,integrity,No Dependent Products,2026-03-22,5.0,,seed
+394,integrity,PTD vs Inactive Date,2026-03-22,159.0,,seed
+395,integrity,$0 Product Fee,2026-03-29,1.0,,seed
+396,integrity,No Dependent Products,2026-03-29,5.0,,seed
+397,integrity,PTD vs Inactive Date,2026-03-29,155.0,,seed
+398,integrity,Inactive Policies on Hold,2026-03-29,33.0,,seed
+399,integrity,Missing MOP,2026-03-29,1.0,,seed
+400,integrity,$0 Product Fee,2026-04-05,1.0,,seed
+401,integrity,No Dependent Products,2026-04-05,3.0,,seed
+402,integrity,PTD vs Inactive Date,2026-04-05,125.0,,seed
+403,integrity,$0 Product Fee,2026-04-12,1.0,,seed
+404,integrity,No Dependent Products,2026-04-12,4.0,,seed
+405,integrity,PTD vs Inactive Date,2026-04-12,128.0,,seed
+406,integrity,Inactive Policies on Hold,2026-04-12,40.0,,seed
+407,integrity,$0 Product Fee,2026-04-19,1.0,,seed
+408,integrity,No Dependent Products,2026-04-19,3.0,,seed
+409,integrity,PTD vs Inactive Date,2026-04-19,175.0,,seed
+410,integrity,$0 Product Fee,2026-04-26,2.0,,seed
+411,integrity,No Dependent Products,2026-04-26,5.0,,seed
+412,integrity,PTD vs Inactive Date,2026-04-26,184.0,,seed
+413,integrity,Inactive Policies on Hold,2026-04-26,28.0,,seed
+414,integrity,$0 Product Fee,2026-05-03,2.0,,seed
+415,integrity,No Dependent Products,2026-05-03,2.0,,seed
+416,integrity,PTD vs Inactive Date,2026-05-03,168.0,,seed
+417,integrity,Missing MOP,2026-05-03,2.0,,seed
+418,integrity,$0 Product Fee,2026-05-10,2.0,,seed
+419,integrity,No Dependent Products,2026-05-10,3.0,,seed
+420,integrity,PTD vs Inactive Date,2026-05-10,163.0,,seed
+421,integrity,Inactive Policies on Hold,2026-05-10,24.0,,seed
+422,integrity,Test Member Accounts,2026-05-12,1.0,,seed
+423,integrity,$0 Product Fee,2026-05-18,2.0,,seed
+424,integrity,No Dependent Products,2026-05-18,3.0,,seed
+425,integrity,PTD vs Inactive Date,2026-05-18,170.0,,seed
+426,integrity,Missing MOP,2026-05-18,2.0,,seed
+427,integrity,$0 Product Fee,2026-05-24,1.0,,seed
+428,integrity,No Dependent Products,2026-05-24,1.0,,seed
+429,integrity,PTD vs Inactive Date,2026-05-24,175.0,,seed
+430,integrity,Inactive Policies on Hold,2026-05-24,26.0,,seed
+431,integrity,$0 Product Fee,2026-06-01,1.0,,seed
+432,integrity,No Dependent Products,2026-06-01,3.0,,seed
+433,integrity,Incomplete Accounts,2026-06-01,21.0,,seed
+434,integrity,PTD vs Inactive Date,2026-06-01,172.0,,seed
+435,integrity,Blank OED,2026-06-05,1.0,,seed
+436,integrity,$0 Product Fee,2026-06-08,2.0,,seed
+437,integrity,No Dependent Products,2026-06-08,2.0,,seed
+438,integrity,PTD vs Inactive Date,2026-06-08,188.0,,seed
+439,integrity,Inactive Policies on Hold,2026-06-08,29.0,,seed
+440,integrity,Missing MOP,2026-06-09,1.0,,seed
+441,integrity,Blank OED,2026-06-09,6.0,,seed
+442,integrity,Incomplete Accounts,2026-06-09,1.0,,seed
+443,integrity,$0 Product Fee,2026-06-11,1.0,,seed
+444,integrity,No Dependent Products,2026-06-11,2.0,,seed
+445,integrity,Blank OED,2026-06-11,2.0,,seed
+446,integrity,Incomplete Accounts,2026-06-11,2.0,,seed
+447,integrity,$0 Product Fee,2026-06-15,2.0,,seed
+448,integrity,PTD vs Inactive Date,2026-06-15,192.0,,seed
+449,integrity,Inactive Policies on Hold,2026-06-12,29.0,,seed
+450,integrity,Missing MOP,2026-06-15,1.0,,seed
+451,integrity,Blank OED,2026-06-15,4.0,,seed
+452,integrity,Incomplete Accounts,2026-06-15,1.0,,seed
+453,integrity,Missing MOP,2026-12-16,2.0,,seed
+454,integrity,Test Member Accounts,2026-01-02,10.0,,seed
+455,integrity,Test Member Accounts,2026-03-19,4.0,,seed
+456,integrity,No Dependent Products,2026-06-15,1.0,,seed
+457,integrity,Incomplete Accounts,2026-06-15,2.0,,seed
+458,integrity,Blank OED,2026-06-19,2.0,,seed
+459,integrity,Incomplete Accounts,2026-06-19,2.0,,seed
+460,integrity,Blank OED,2026-06-23,1.0,,seed
+461,integrity,Blank OED,2026-06-25,6.0,,seed
+462,integrity,Blank OED,2026-06-27,1.0,,seed
+463,integrity,Blank OED,2026-06-29,2.0,,seed
+464,integrity,Blank OED,2026-07-01,4.0,,seed
+465,integrity,Blank OED,2026-07-03,2.0,,seed
+466,integrity,Blank OED,2026-07-07,1.0,,seed
+467,integrity,Blank OED,2026-07-09,10.0,,seed
+468,listbill,LB MOP (Non-LB Members),2025-08-01,0.0,,seed
+469,listbill,LB NBD in the Past,2025-08-01,172.0,,seed
+470,listbill,LB FBD in the Past,2025-08-01,7.0,,seed
+471,listbill,LB NBD in the Past,2025-08-28,96.0,,seed
+472,listbill,LB MOP (Non-LB Members),2025-10-07,0.0,,seed
+473,listbill,LB NBD in the Past,2025-09-03,151.0,,seed
+474,listbill,LB NBD in the Past,2025-09-25,0.0,,seed
+475,listbill,LB FBD in the Past,2025-10-07,0.0,,seed
+476,listbill,LB NBD in the Past,2025-10-07,18.0,,seed
+477,integrity,$0 Product Fee,2026-07-23,2.0,,sync
