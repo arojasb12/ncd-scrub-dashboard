@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCD Scrub Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script crossorigin src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; background: #f7f8fa; color: #413D42; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useMemo, useCallback } = React;
+const { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaChart, Area } = Recharts;
+
+const C = {
+  dk: "#173963", pr: "#017EAD", or: "#EC8934", sc: "#4CADD1",
+  lb: "#E6F3F8", nb: "#413D42", wh: "#FFFFFF", rd: "#C00000",
+  gr: "#666666", lg: "#EEEEEE"
+};
+
+const SECTIONS = [
+  { id: "eligibility", label: "Eligibility Errors", cards: [
+    { c: "Daily Dupes", f: "v" }, { c: "MetLife (EDI)", f: "v" }, { c: "OED Errors (EDI)", f: "v" },
+    { c: "MetLife (Carrier)", f: "v" }, { c: "VSP (EDI)", f: "v" }, { c: "VSP Carrier", f: "v" },
+    { c: "NWFA (EDI)", f: "v" }, { c: "Careington (Carrier)", f: "v" }, { c: "Zurich (e123)", f: "v" }
+  ]},
+  { id: "admin", label: "Administering Accounts", cards: [
+    { c: "Age Outs – Final Notice", f: "v" }, { c: "Age Outs – 30-Day Notice", f: "v" },
+    { c: "Mass Terms (Count)", f: "v", label: "Mass Terms (Count)" },
+    { c: "Mass Terms (Count)", f: "a", label: "Mass Terms ($)" },
+    { c: "Policies on Hold 2+ Mo.", f: "v" }, { c: "SRs Aged 30 Days", f: "v" }
+  ]},
+  { id: "billing", label: "Billing Scrubs", cards: [
+    { c: "FBD in the Past", f: "v" }, { c: "NBD in the Past", f: "v" },
+    { c: "Blank FBD", f: "v" }, { c: "Blank NBD", f: "v" },
+    { c: "ACH Rebill (Recapture)", f: "a", label: "ACH Rebill Recapture ($)" },
+    { c: "FPN Update (ACH Rebill 2+ Attempts)", f: "v", label: "FPN Update (ACH Rebill)" },
+    { c: "Billing Alignment", f: "v" },
+    { c: "Account Updater", f: "v", label: "Account Updater (Count)" },
+    { c: "Account Updater", f: "a", label: "Account Updater ($)" }
+  ]},
+  { id: "integrity", label: "Data Integrity", cards: [
+    { c: "Missing MOP", f: "v" }, { c: "Incomplete Accounts", f: "v" },
+    { c: "$0 Product Fee", f: "v" }, { c: "No Dependent Products", f: "v" },
+    { c: "PTD vs Inactive Date", f: "v" }, { c: "Inactive Policies on Hold", f: "v" },
+    { c: "Test Member Accounts", f: "v" }, { c: "Blank OED", f: "v" }
+  ]},
+  { id: "listbill", label: "List Bill Scrubs", cards: [
+    { c: "LB MOP (Non-LB Members)", f: "v" }, { c: "LB NBD in the Past", f: "v" },
+    { c: "LB FBD in the Past", f: "v" }
+  ]}
+];
+
+function fmtVal(v, isDollar) {
+  if (v == null) return "\u2014";
+  if (isDollar) return "$" + Number(v).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return Number(v).toLocaleString("en-US", { maximumFractionDigits: 0 });
+}
+
+function fmtPct(v) {
+  if (v == null) return "\u2014";
+  return (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%";
+}
+
+function fmtDate(d) {
+  if (!d) return "\u2014";
+  var dt = new Date(d + "T00:00:00");
+  return (dt.getMonth() + 1) + "/" + dt.getDate() + "/" + String(dt.getFullYear()).slice(2);
+}
+
+function getStats(entries, sec, cat, f) {
+  var rows = entries
+    .filter(function(e) { return e.section === sec && e.category === cat; })
+    .map(function(e) { return { d: e.date, val: f === "a" ? e.amount : e.value }; })
+    .filter(function(r) { return r.val != null; })
+    .sort(function(a, b) { return a.d.localeCompare(b.d); });
+  if (!rows.length) return null;
+  var last = rows[rows.length - 1];
+  var y = rows.filter(function(r) { return r.d >= "2026-01-01" && r.d < "2027-01-01"; });
+  var avg = y.length ? y.reduce(function(s, r) { return s + r.val; }, 0) / y.length : null;
+  return {
+    latest: last.val, date: last.d, avg: avg,
+    delta: avg && avg !== 0 ? (last.val - avg) / avg : null,
+    history: rows
+  };
+}
+
+/* ── Section Summary Component ── */
+/* Shows a condensed health check for one section: total categories, how many trending up/down, and the top attention items */
+function SectionSummary({ sec, entries, onExpand }) {
+  var aboveAvg = 0, belowAvg = 0, noData = 0;
+  var attentionItems = [];
+
+  sec.cards.forEach(function(card) {
+    var st = getStats(entries, sec.id, card.c, card.f);
+    var label = card.label || card.c;
+    if (!st) { noData++; return; }
+    if (st.delta != null) {
+      if (st.delta > 0.05) {
+        aboveAvg++;
+        attentionItems.push({ label: label, delta: st.delta, latest: st.latest, isDollar: card.f === "a" });
+      } else if (st.delta < -0.05) {
+        belowAvg++;
+      }
+    }
+  });
+
+  attentionItems.sort(function(a, b) { return Math.abs(b.delta) - Math.abs(a.delta); });
+  var topItems = attentionItems.slice(0, 3);
+
+  var totalCards = sec.cards.length;
+  var tracked = totalCards - noData;
+
+  return (
+    <div style={{ background: C.wh, borderRadius: 10, padding: "18px 22px", marginBottom: 14, boxShadow: "0 1px 4px rgba(0,0,0,0.06)", cursor: "pointer", borderLeft: aboveAvg > 2 ? "4px solid " + C.rd : aboveAvg > 0 ? "4px solid " + C.or : "4px solid " + C.sc }} onClick={onExpand}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+        <div style={{ fontSize: "0.95rem", fontWeight: 700, color: C.dk }}>{sec.label}</div>
+        <div style={{ fontSize: "0.72rem", color: C.gr }}>{tracked} metrics tracked &rsaquo;</div>
+      </div>
+
+      <div style={{ display: "flex", gap: 16, marginBottom: topItems.length > 0 ? 12 : 0 }}>
+        <div style={{ fontSize: "0.78rem" }}>
+          <span style={{ color: C.rd, fontWeight: 600 }}>{aboveAvg}</span>
+          <span style={{ color: C.gr }}> above avg</span>
+        </div>
+        <div style={{ fontSize: "0.78rem" }}>
+          <span style={{ color: "#2e8b57", fontWeight: 600 }}>{belowAvg}</span>
+          <span style={{ color: C.gr }}> below avg</span>
+        </div>
+        {noData > 0 && <div style={{ fontSize: "0.78rem" }}>
+          <span style={{ color: C.gr }}>{noData} no data</span>
+        </div>}
+      </div>
+
+      {topItems.length > 0 && (
+        <div style={{ borderTop: "1px solid " + C.lg, paddingTop: 10 }}>
+          <div style={{ fontSize: "0.68rem", fontWeight: 600, color: C.gr, textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: 6 }}>Needs Attention</div>
+          {topItems.map(function(item) {
+            return (
+              <div key={item.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+                <span style={{ fontSize: "0.78rem", color: C.nb }}>{item.label}</span>
+                <span style={{ fontSize: "0.78rem", fontWeight: 600, color: C.rd }}>
+                  {fmtVal(item.latest, item.isDollar)} ({fmtPct(item.delta)})
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── Metric Card ── */
+function MetricCard({ sec, card, entries, onDrill }) {
+  var isDollar = card.f === "a";
+  var st = getStats(entries, sec.id, card.c, card.f);
+  var label = card.label || card.c;
+
+  if (!st) {
+    return (
+      <div style={{ background: C.wh, borderRadius: 8, padding: "11px 13px", boxShadow: "0 1px 3px rgba(0,0,0,0.06)", borderLeft: "4px solid " + C.lg }}>
+        <div style={{ fontSize: "0.65rem", fontWeight: 600, color: C.gr, textTransform: "uppercase", letterSpacing: "0.4px" }}>{label}</div>
+        <div style={{ fontSize: "0.9rem", color: C.gr, marginTop: 6 }}>No data</div>
+      </div>
+    );
+  }
+
+  var borderColor = st.delta > 0.15 ? C.rd : st.delta < -0.15 ? "#2e8b57" : C.sc;
+
+  return (
+    <div style={{ background: C.wh, borderRadius: 8, padding: "11px 13px", boxShadow: "0 1px 3px rgba(0,0,0,0.06)", borderLeft: "4px solid " + borderColor, cursor: "pointer" }} onClick={function() { onDrill({ sec: sec.id, cat: card.c, f: card.f, label: label }); }}>
+      <div style={{ fontSize: "0.65rem", fontWeight: 600, color: C.gr, textTransform: "uppercase", letterSpacing: "0.4px", marginBottom: 5, lineHeight: 1.3 }}>{label}</div>
+      <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
+        <span style={{ fontSize: "1.4rem", fontWeight: 700, color: C.dk }}>{fmtVal(st.latest, isDollar)}</span>
+        <span style={{ fontSize: "0.65rem", color: C.gr }}>{fmtDate(st.date)}</span>
+      </div>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 5 }}>
+        <span style={{ fontSize: "0.7rem", color: C.nb }}>Avg: {fmtVal(st.avg, isDollar)}</span>
+        {st.delta != null && (
+          <span style={{ fontSize: "0.7rem", fontWeight: 600, color: st.delta > 0.1 ? C.rd : st.delta < -0.1 ? "#2e8b57" : C.gr }}>
+            {st.delta > 0 ? "\u25B2" : st.delta < 0 ? "\u25BC" : "\u2014"} {fmtPct(st.delta)}
+          </span>
+        )}
+      </div>
+      {st.history.length > 3 && (
+        <div style={{ marginTop: 5, height: 26 }}>
+          <ResponsiveContainer width="100%" height={26}>
+            <AreaChart data={st.history.slice(-12)}>
+              <Area type="monotone" dataKey="val" stroke={C.pr} fill={C.lb} strokeWidth={1.5} dot={false} />
+            </AreaChart>
+          </ResponsiveContainer>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── Main App ── */
+function App() {
+  var [entries, setEntries] = useState([]);
+  var [loading, setLoading] = useState(true);
+  var [tab, setTab] = useState("overview");
+  var [drill, setDrill] = useState(null);
+  var [expandedSection, setExpandedSection] = useState(null);
+  var [error, setError] = useState(null);
+
+  useEffect(function() {
+    fetch("/api/entries")
+      .then(function(r) { return r.json(); })
+      .then(function(data) { setEntries(data); setLoading(false); })
+      .catch(function(err) { setError(err.message); setLoading(false); });
+  }, []);
+
+  var handleDrill = function(d) { setDrill(d); setTab("drill"); };
+
+  if (loading) {
+    return (
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", color: C.dk, fontSize: "1rem", fontWeight: 600 }}>
+        Loading dashboard...
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", color: C.rd, fontSize: "0.9rem" }}>
+        Error loading data: {error}
+      </div>
+    );
+  }
+
+  var tabs = [{ id: "overview", label: "Overview" }].concat(
+    SECTIONS.map(function(s) { return { id: s.id, label: s.label }; })
+  );
+
+  return (
+    <div style={{ minHeight: "100vh", background: "#f7f8fa" }}>
+      {/* Header */}
+      <div style={{ background: "linear-gradient(135deg, " + C.dk + " 0%, #1a4a7a 100%)", color: C.wh, padding: "14px 24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div>
+          <div style={{ fontSize: "1.15rem", fontWeight: 700 }}>NCD <span style={{ color: C.or }}>Operations</span> Scrub Dashboard</div>
+          <div style={{ fontSize: "0.72rem", color: C.sc, marginTop: 2 }}>{entries.length} entries tracked</div>
+        </div>
+        <div style={{ textAlign: "right", fontSize: "0.82rem", fontWeight: 600 }}>
+          {new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+        </div>
+      </div>
+
+      {/* Nav */}
+      <div style={{ display: "flex", background: C.wh, borderBottom: "2px solid " + C.lg, overflowX: "auto", padding: "0 12px" }}>
+        {tabs.map(function(t) {
+          return (
+            <button key={t.id} onClick={function() { setTab(t.id); setExpandedSection(null); }} style={{
+              padding: "9px 14px", fontSize: "0.73rem", fontWeight: tab === t.id ? 700 : 500,
+              cursor: "pointer", border: "none", background: "none", fontFamily: "inherit",
+              whiteSpace: "nowrap", color: tab === t.id ? C.pr : C.gr,
+              borderBottom: tab === t.id ? "3px solid " + C.or : "3px solid transparent"
+            }}>{t.label}</button>
+          );
+        })}
+      </div>
+
+      {/* Overview — Section Summaries */}
+      {tab === "overview" && (
+        <div style={{ maxWidth: 800, margin: "0 auto", padding: "20px 24px" }}>
+          {SECTIONS.map(function(sec) {
+            var isExpanded = expandedSection === sec.id;
+            return (
+              <div key={sec.id}>
+                <SectionSummary
+                  sec={sec}
+                  entries={entries}
+                  onExpand={function() { setExpandedSection(isExpanded ? null : sec.id); }}
+                />
+                {isExpanded && (
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(195px, 1fr))", gap: 10, padding: "0 0 20px", marginTop: -4 }}>
+                    {sec.cards.map(function(card) {
+                      return <MetricCard key={(card.label || card.c) + card.f} sec={sec} card={card} entries={entries} onDrill={handleDrill} />;
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Section Detail View */}
+      {SECTIONS.some(function(s) { return s.id === tab; }) && (
+        <div style={{ padding: "20px 24px" }}>
+          <h2 style={{ color: C.dk, fontSize: "1.05rem", margin: "0 0 14px" }}>
+            {(SECTIONS.find(function(s) { return s.id === tab; }) || {}).label}
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(195px, 1fr))", gap: 10 }}>
+            {(SECTIONS.find(function(s) { return s.id === tab; }) || { cards: [] }).cards.map(function(card) {
+              var sec = SECTIONS.find(function(s) { return s.id === tab; });
+              return <MetricCard key={(card.label || card.c) + card.f} sec={sec} card={card} entries={entries} onDrill={handleDrill} />;
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Drill-down */}
+      {tab === "drill" && drill && (function() {
+        var isDollar = drill.f === "a";
+        var st = getStats(entries, drill.sec, drill.cat, drill.f);
+        if (!st) return <div style={{ padding: 24 }}>No data.</div>;
+        var chartData = st.history.map(function(r) { return { date: fmtDate(r.d), val: r.val }; });
+        var allE = entries.filter(function(e) { return e.section === drill.sec && e.category === drill.cat; }).sort(function(a, b) { return b.date.localeCompare(a.date); });
+
+        return (
+          <div style={{ padding: 24 }}>
+            <button onClick={function() { setTab("overview"); }} style={{ padding: "7px 14px", border: "none", borderRadius: 6, fontSize: "0.75rem", cursor: "pointer", fontFamily: "inherit", background: C.lg, color: C.nb, marginBottom: 14 }}>{"\u2190"} Back</button>
+            <h2 style={{ color: C.dk, fontSize: "1.1rem", margin: "0 0 4px" }}>{drill.label}</h2>
+            <p style={{ color: C.gr, fontSize: "0.75rem", margin: "0 0 18px" }}>{(SECTIONS.find(function(s) { return s.id === drill.sec; }) || {}).label}</p>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12, marginBottom: 18 }}>
+              {[
+                { l: "Latest", v: fmtVal(st.latest, isDollar), sub: fmtDate(st.date), col: C.dk },
+                { l: "2026 Avg", v: fmtVal(st.avg, isDollar), sub: null, col: C.pr },
+                { l: "vs Avg", v: st.delta != null ? fmtPct(st.delta) : "\u2014", sub: null, col: st.delta > 0 ? C.rd : st.delta < 0 ? "#2e8b57" : C.gr }
+              ].map(function(box) {
+                return (
+                  <div key={box.l} style={{ background: C.wh, borderRadius: 8, padding: 12, textAlign: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+                    <div style={{ fontSize: "0.65rem", color: C.gr, fontWeight: 600, textTransform: "uppercase" }}>{box.l}</div>
+                    <div style={{ fontSize: "1.4rem", fontWeight: 700, color: box.col }}>{box.v}</div>
+                    {box.sub && <div style={{ fontSize: "0.7rem", color: C.gr }}>{box.sub}</div>}
+                  </div>
+                );
+              })}
+            </div>
+
+            <div style={{ background: C.wh, borderRadius: 8, padding: 14, marginBottom: 18, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+              <ResponsiveContainer width="100%" height={220}>
+                <LineChart data={chartData}>
+                  <XAxis dataKey="date" tick={{ fontSize: 9, fill: C.gr }} interval="preserveStartEnd" />
+                  <YAxis tick={{ fontSize: 9, fill: C.gr }} width={50} tickFormatter={function(v) { return isDollar ? (v >= 1000 ? "$" + (v / 1000).toFixed(0) + "k" : "$" + v) : v; }} />
+                  <Tooltip formatter={function(v) { return fmtVal(v, isDollar); }} contentStyle={{ fontSize: "0.75rem", borderRadius: 6 }} />
+                  <Line type="monotone" dataKey="val" stroke={C.pr} strokeWidth={2.5} dot={{ fill: C.pr, r: 2.5 }} activeDot={{ r: 4, fill: C.or }} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+
+            <div style={{ background: C.wh, borderRadius: 8, overflow: "hidden", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.75rem" }}>
+                <thead>
+                  <tr>
+                    <th style={{ background: C.dk, color: C.wh, padding: "7px 10px", textAlign: "left", fontWeight: 600, fontSize: "0.7rem" }}>Date</th>
+                    <th style={{ background: C.dk, color: C.wh, padding: "7px 10px", textAlign: "left", fontWeight: 600, fontSize: "0.7rem" }}>{isDollar ? "Amount" : "Count"}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {allE.map(function(e, i) {
+                    return (
+                      <tr key={e.id || i}>
+                        <td style={{ padding: "5px 10px", background: i % 2 === 0 ? C.wh : C.lg, borderBottom: "1px solid #e0e0e0" }}>{fmtDate(e.date)}</td>
+                        <td style={{ padding: "5px 10px", background: i % 2 === 0 ? C.wh : C.lg, borderBottom: "1px solid #e0e0e0" }}>{isDollar ? fmtVal(e.amount, true) : fmtVal(e.value, false)}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        );
+      })()}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
