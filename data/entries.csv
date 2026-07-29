@@ -475,4 +475,12 @@ id,section,category,date,value,amount,source
 474,listbill,LB NBD in the Past,2025-09-25,0.0,,seed
 475,listbill,LB FBD in the Past,2025-10-07,0.0,,seed
 476,listbill,LB NBD in the Past,2025-10-07,18.0,,seed
-477,integrity,Missing MOP,2026-07-28,8.0,,sync
+477,integrity,$0 Product Fee,2026-07-23,2.0,,sync
+478,integrity,$0 Product Fee,2026-07-24,1.0,,sync
+479,integrity,$0 Product Fee,2026-07-27,2.0,,sync
+480,integrity,$0 Product Fee,2026-07-29,1.0,,sync
+481,integrity,Blank OED,2026-07-20,1.0,,sync
+482,integrity,Blank OED,2026-07-22,10.0,,sync
+483,integrity,Blank OED,2026-07-27,11.0,,sync
+484,integrity,Missing MOP,2026-07-14,4.0,,sync
+485,integrity,No Dependent Products,2026-07-28,1.0,,sync
