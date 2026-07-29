@@ -487,3 +487,5 @@ id,section,category,date,value,amount,source
 486,billing,Blank FBD,2026-07-15,11.0,,sync
 487,billing,FBD in the Past,2026-07-15,495.0,,sync
 488,billing,Blank FBD,2026-07-22,2.0,,sync
+489,billing,Blank NBD,2026-07-23,2.0,,sync
+490,billing,Billing Alignment,2026-07-14,25.0,,sync
